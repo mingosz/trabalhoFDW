@@ -1,0 +1,370 @@
+:root {
+    --text-color: #f1f1f1;
+    --link-color: #962dd9;
+    --background-color: #313131;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Menus */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .esquerda a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .direita {
+    display: flex;
+    gap: 6px;
+}
+
+
+nav .direita a {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .direita a:last-child {
+    background-color: var(--link-color);
+    color: var(--background-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* Sobre mim */
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.sobre .texto {
+    flex: 5;
+}
+
+.sobre .texto h2 {
+    font-size: 45px;
+}
+
+.sobre .texto p {
+    margin-top: 10px;
+}
+
+.sobre .texto .links {
+    margin-top: 25px;
+}
+
+.icons {
+    width: 15px;
+    height: 15px;
+}
+
+.sobre .texto .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+};
+
+.foto {
+    border-radius: 50%;
+}
+
+
+/* Formação */
+
+
+.form-educ {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.form-educ h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.form-educ .text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-educ .fac {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-educ .fac .ps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 10px 10px;
+    margin: 10px;
+    border: 1.5px solid #505050;
+    border-radius: 5px;
+}
+
+.form-educ .fac .ps img {
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+
+.title {
+    font-size: 15px;
+}
+
+.subtitle {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    color: #969696;
+    font-size: 12px;
+}
+
+
+
+/* PORTFÓLIO APRENDENDO */
+
+.portf h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.portf .portfolio {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+
+.portf .textportf {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.portf .develop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portf .develop .ru {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #505050;
+    border-radius: 5px;
+}
+
+.portf .develop .ru img {
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.portf .develop .ru span {
+    font-size: 18px;
+}
+
+.portf .links {
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.portf .links a {
+    background-color: var(--link-color);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    transition: .1s;
+}
+
+.portf .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+};
+
+
+/* CONTATO (PARTE DE EMAIL) */
+
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.contact-section .group {
+    font-size: 18px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.contact-section .group .text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form button:hover {
+    filter: brightness(.9);
+}
+
+@media (max-width: 850px) {
+  /* SOBRE MIM */
+  .sobre .texto h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 740px) {
+  /* SOBRE MIM */
+  .sobre {
+    flex-direction: column-reverse;
+  }
+
+  .sobre .foto img {
+    width: 300px;
+  }
+
+  /* CONTATO */
+  .contact-section .group {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 600px) {
+    /* tamanhos menores para melhor responsividade (MENU) */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .direita a {
+        font-size: 22px;
+    }
+
+    nav .direita a span {
+        display: none;
+    }
+
+    /* sOBRE MIM */
+    
+    .sobre {
+        padding: 0 20px;
+    }
+
+    .sobre .texto h2 {
+        font-size: 30px;
+    }
+
+
+    /* FORMAÇÃO */
+
+    .form-educ {
+        padding: 0 20px;
+    }
+
+    .form-educ .fac .uninter span {
+        font-size: 16px;
+    }
+
+
+    /* CONTATO */
+    .contact-section {
+        padding: 0 20px;
+    }
+}
